@@ -1,0 +1,98 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UniChoice</title>
+
+    <!-- Шрифт -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+
+    <!-- Подключение CSS -->
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+
+<body>
+
+    <!-- ---------- HEADER ---------- -->
+    <header>
+        <h1>UniChoice</h1>
+        <p>Выбор специальностей</p>
+        <nav>
+            <a href="{% url 'tech_universities' %}">Технические</a>
+            <a href="{% url 'med_universities' %}">Медицинские</a>
+            <a href="{% url 'human_universities' %}">Гуманитарные</a>
+            <a href="{% url 'art_universities' %}">Творческие</a>
+        </nav>
+    </header>
+
+    <!-- ---------- 6 СЕКЦИЙ О ВУЗАХ ---------- -->
+
+    <section>
+        <img src="https://images.unsplash.com/photo-1523050854058-8df90110c9f1" alt="university">
+        <div class="text-block">
+            <h2>Технический университет</h2>
+            <p>Один из ведущих вузов в сфере инженерии, программирования и прикладных технологий. Отличается современными лабораториями и высоким уровнем подготовки.</p>
+            <p class="req"><b>Требования:</b> высокий балл по математике, физике; портфолио проектов приветствуется.</p>
+        </div>
+    </section>
+
+    <section>
+        <img src="https://images.unsplash.com/photo-1577896851231-70ef18881754" alt="university">
+        <div class="text-block">
+            <h2>Медицинская академия</h2>
+            <p>Сильная база по биологии, медицине и анатомии. Университет готовит врачей широкого профиля с упором на практику.</p>
+            <p class="req"><b>Требования:</b> биология, химия, высокий конкурс, психологическое собеседование.</p>
+        </div>
+    </section>
+
+    <section>
+        <img src="https://images.unsplash.com/photo-1581092587371-9470a1abfeaf" alt="university">
+        <div class="text-block">
+            <h2>Гуманитарный университет</h2>
+            <p>Образовательный центр для будущих лингвистов, историков, журналистов и социальных исследователей.</p>
+            <p class="req"><b>Требования:</b> русский/язык, история или обществознание.</p>
+        </div>
+    </section>
+
+    <section>
+        <img src="https://images.unsplash.com/photo-1503676260728-1c00da094a0b" alt="university">
+        <div class="text-block">
+            <h2>Творческая академия</h2>
+            <p>Университет, ориентированный на искусство, дизайн, музыку и архитектуру. Особое внимание — развитию творческого мышления.</p>
+            <p class="req"><b>Требования:</b> портфолио работ, творческий экзамен или собеседование.</p>
+        </div>
+    </section>
+
+    <section>
+        <img src="https://images.unsplash.com/photo-1596495577886-d920f1fb7238" alt="university">
+        <div class="text-block">
+            <h2>Университет международных отношений</h2>
+            <p>Сильная подготовка в области дипломатии, мировой политики, экономики и переводоведения.</p>
+            <p class="req"><b>Требования:</b> иностранный язык, история, эссе.</p>
+        </div>
+    </section>
+
+    <section>
+        <img src="https://images.unsplash.com/photo-1553877522-43269d4ea984" alt="university">
+        <div class="text-block">
+            <h2>Экономический университет</h2>
+            <p>Ориентирован на подготовку специалистов в финансах, аналитике, менеджменте и маркетинге.</p>
+            <p class="req"><b>Требования:</b> математика, русский язык, иногда обществознание.</p>
+        </div>
+    </section>
+
+    <!-- ---------- FOOTER ---------- -->
+    <footer>
+        <h2>О нас</h2>
+        <p>UniChoice — это информационный сервис, созданный чтобы помочь студентам найти подходящий университет, сравнить направления и понять требования к поступлению.</p>
+
+        <a href="mailto:info@unichoice.com">info@unichoice.com</a>
+        <a href="tel:+79998887766">+7 (999) 888-77-66</a>
+        <a href="#">Instagram</a>
+        <a href="#">Telegram</a>
+    </footer>
+
+</body>
+</html>
